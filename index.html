@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <title>My Portfolio Website</title>
+
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #000000;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .logo img{
+    height: 6rem;
+}
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        
+      }
+     
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+  }
+
+  nav a i {
+    margin-right: 5px;
+  }
+
+  nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 6px rgba(102, 102, 102);
+  }
+      .content {
+        background-color: #e6e6e6;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        align-items: center;
+      }
+      .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+
+      }
+      .bio p {
+        margin-top: 20px;
+        max-width: 90%;
+        text-align: left;
+        margin-right: 5px;
+      }
+      .profile-image {
+        border-radius: 50%;
+        border: 2px solid #333;
+        margin-top: 20px;
+        
+      }
+      footer {
+        background-color: #000000;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  footer a:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 6px rgba(102, 102, 102);
+  }
+  .address {
+    margin-right: 5px;
+  }
+      .map-container {
+        border: 2px solid #333;
+        box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+
+        padding: 10px;
+        margin-top: 20px;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .bio {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+        .bio p {
+          max-width: 400px;
+          text-align: left;
+          padding: 20px 0;
+        }
+        .profile-image {
+          margin-top: 0;
+          margin-left: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="" height="50" />
+    </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <img
+        src="image2.jpeg"
+        alt=""
+        width="400%"
+        style="max-width: 600px"
+      />
+      <div class="bio">
+        <h2>Gift Serathi</h2>
+        <p>
+          Welcome to my digital corner! I'm a Semi-Skilled Authorised Supervisor
+          with an everlasting love for software development and an experience in
+          managing team operations, I've developed my ability to ensure
+          efficiency and maintain high standards. Despite the difficulties of
+          supervision, my heart beats hardest for technological and software
+          advancement. 
+        </br>
+          </br> I get energized by delving into the complex world of
+          programming languages, solving software design puzzles, and staying on
+          top of industry developments. I thrive on the thrill of continuous
+          learning and adventure, eager to face the next challenge that comes my
+          way. </br>
+          
+        </br>My ultimate goal? To smoothly combine my experience in
+          supervision with my passion for software development. I am on a
+          journey to transition into a career.
+        </p>
+        <img
+          src="image0.jpeg"
+          alt=""
+          width="300"
+          class="profile-image"
+        />
+      </div>
+    </div>
+
+    <footer>
+        <div class="address">
+            <p>3125 Tumahole Street, </br>Jabavu Soweto </br>Johanessburg 
+            </br>1809</p>
+        <div class="footer-content">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+          </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.2190602604105!2d27.87101547508573!3d-26.2545528660259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a6de6bf5ea4f%3A0x2b158b1e244f1b39!2s3125%20Tumahole%20St%2C%20Jabavu%2C%20Soweto%2C%201809!5e0!3m2!1sen!2sza!4v1712468282548!5m2!1sen!2sza"
+          width="300"
+          height="200"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
