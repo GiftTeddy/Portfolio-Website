@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo img{
+height: 6rem;
+}
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    
+  }
+ 
+
+nav a {
+color: #fff;
+text-decoration: none;
+padding: 10px 20px;
+justify-content: space-between;
+box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+transition: transform 0.3s, box-shadow 0.3s;
+display: inline-block;
+}
+
+nav a i {
+margin-right: 5px;
+}
+
+nav a:hover {
+transform: translateY(-2px);
+box-shadow: 4px 4px 6px rgba(102, 102, 102);
+}
+.video {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.video video {
+    width: 80%;
+   
+    object-fit: cover; 
+}
+  .bio {
+    
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+  }
+ 
+  .bio p {
+    margin-left: 180px;
+content: normal;
+    margin-top: 20px;
+    align-items: flex-start;
+    text-align: left;
+}
+.profile-image {
+    margin-right: 180px;
+    align-self: flex-start; 
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer a {
+color: #fff;
+text-decoration: none;
+padding: 10px;
+border-radius: 50%;
+box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+transition: transform 0.3s, box-shadow 0.3s;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+margin: 0 5px;
+width: 40px;
+height: 40px;
+}
+
+footer a:hover {
+transform: translateY(-2px);
+box-shadow: 4px 4px 6px rgba(102, 102, 102);
+}
+.address {
+margin-right: 5px;
+}
+  .map-container {
+    border: 2px solid #333;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .bio {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .bio p {
+      max-width: 400px;
+      text-align: left;
+      padding: 20px 0;
+    }
+    .profile-image {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+  .form-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  .form-container label {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="tel"],
+  .form-container textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input[type="text"]::placeholder,
+  .form-container input[type="email"]::placeholder,
+  .form-container input[type="tel"]::placeholder,
+  .form-container textarea::placeholder {
+    color: #fff;
+  }
+  
+  .form-container button[type="submit"] {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  .content-about {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-about {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+h3 {
+    color: #555;
+    font-size: 20px;
+}
+p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
